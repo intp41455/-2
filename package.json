@@ -1,7 +1,9 @@
 {
-  "name": "react-example",
+  "name": "enterprise-multi-agent-whitepaper",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.6.4",
+  "description": "企业多智能体架构落地实施与技术白皮书 — 5 种文档变体 × 6 套设计风格的内容引擎，支持 A4 PDF / Markdown / 离线单文件 HTML 三路导出",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
