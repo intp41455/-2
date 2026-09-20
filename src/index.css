@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #FDFBFA;
+    --ink: #2D2824;
+    --accent: #CC5500;
+    --border: #E8E3DF;
+    --surface: #FFFFFF;
+    --ink-fade: #666666;
+    --ink-muted: #444444;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+  }
+
+  h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Variation 1 Core Classes */
+.btn-v1-primary {
+  background: #2D2824;
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.btn-v1-primary:hover {
+  background: #1C1C1A;
+}
+
+.btn-v1-secondary {
+  background: #FFFFFF;
+  color: #2D2824;
+  border: 1px solid #E8E3DF;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.btn-v1-secondary:hover {
+  background: #FDF5F0;
+  border-color: #CC5500;
+}
+
+.v1-card {
+  border: 1px solid #E8E3DF;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+/* Typography Helpers for Variation 7 & Variation 1 */
+.font-cormorant {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
+}
+
+.font-space-mono {
+  font-family: 'Space Mono', 'JetBrains Mono', monospace;
+}
+
+/* Micro typography labels matching Variation 7 */
+.meta-tag {
+  font-family: 'Space Mono', 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgb(204, 85, 0);
+}
+
+.label {
+  font-family: 'Space Mono', 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgb(204, 85, 0);
+  font-weight: 700;
+}
+
+.stat {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgb(204, 85, 0);
+  line-height: 1.1;
+  display: block;
+}
+
+.btn-v7-primary {
+  padding: 0.875rem 2.25rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background: rgb(204, 85, 0);
+  color: #FFF;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-v7-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-v7-secondary {
+  padding: 0.875rem 2.25rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #1C1C1A;
+  color: #1C1C1A;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-v7-secondary:hover {
+  background: rgba(28, 28, 26, 0.05);
+}
+
+.button-primary {
+  background: var(--ink);
+  color: var(--surface);
+  padding: 0.75rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-primary:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.badge-tag {
+  background: rgba(17, 24, 39, 0.06);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: #374151;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Styles for Pixel-Perfect High-Res PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force background graphic colors and borders */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm 12mm 14mm;
+  }
+
+  .pdf-page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .pdf-avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .pdf-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* Expand all collapsed panels in print */
+  details {
+    display: block !important;
+  }
+  details > summary {
+    display: none !important;
+  }
+}

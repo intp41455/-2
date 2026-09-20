@@ -1,0 +1,6 @@
+{
+  "name": "企业多智能体架构落地实施与技术白皮书",
+  "description": "企业级多智能体系统落地方案、康源智脑案例、安全监察与持续审计体系及信息采集标准问卷的精美图文原理解释与高保真PDF文档生成系统。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
